@@ -1,0 +1,12 @@
+body {
+	font-family: Roboto, Arial;
+	background-color: rgb(23, 22, 23);
+	color: white;
+}
+
+
+.option {
+	width: 80px;
+	border: 2px solid white;
+}
+
