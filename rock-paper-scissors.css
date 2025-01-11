@@ -4,9 +4,51 @@ body {
 	color: white;
 }
 
-
-.option {
-	width: 80px;
-	border: 2px solid white;
+.options {
+	display: flex;
+	width: 270px;
+	height: 80px;
 }
 
+.option {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid white;
+	border-radius: 40px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+
+.js-rock-option, .js-scissors-option, .js-paper-option {
+	transition: opacity 0.3s ease;
+}
+
+.active {
+	opacity: 0.5;
+}
+
+.js-rock, .js-paper, .js-scissors {
+	width: 50px;
+}
+
+.js-rock {
+	margin-bottom: 10px;
+}
+
+.js-paper {
+	margin-left: 3px;
+}
+
+.js-scissors {
+	margin-left: 1px;
+}
+
+.button {
+	width: 100px;
+	height: 30px;
+	border-radius: 2px;
+	background-color: aliceblue;
+}

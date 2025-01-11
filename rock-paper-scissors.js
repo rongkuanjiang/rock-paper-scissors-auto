@@ -1,13 +1,25 @@
 let isAutoPlaying = false;
 let intervalId;
 
-document.querySelector('.js-rock').addEventListener('click', () => {
+document.querySelector('.js-rock-option').addEventListener('click', () => {
+	document.querySelector('.js-rock-option').classList.add('active');
+    setTimeout(() => {
+      document.querySelector('.js-rock-option').classList.remove('active');
+    }, 300);
 	playGame('rock');
 })
-document.querySelector('.js-paper').addEventListener('click', () => {
+document.querySelector('.js-paper-option').addEventListener('click', () => {
+	document.querySelector('.js-paper-option').classList.add('active');
+    setTimeout(() => {
+      document.querySelector('.js-paper-option').classList.remove('active');
+    }, 300);
 	playGame('paper');
 })
-document.querySelector('.js-scissors').addEventListener('click', () => {
+document.querySelector('.js-scissors-option').addEventListener('click', () => {
+	document.querySelector('.js-scissors-option').classList.add('active');
+    setTimeout(() => {
+      document.querySelector('.js-scissors-option').classList.remove('active');
+    }, 300);
 	playGame('scissors');
 })
 
